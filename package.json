@@ -1,0 +1,32 @@
+{
+  "name": "fastify-authz-secret-provider",
+  "version": "1.0.0",
+  "description": "Secret provider for Auth0 on Fastify",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir ./dist --source-maps",
+    "test": "NODE_ENV=test mocha --require @babel/register --exit --timeout 5000"
+  },
+  "author": "Vicente Canales <vicente@canales.io>",
+  "license": "MIT",
+  "dependencies": {
+    "jwks-rsa": "^1.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "fastify": "^2.5.0",
+    "fastify-jwt": "^1.0.0",
+    "mocha": "^6.1.4",
+    "prettier": "^1.18.2",
+    "supertest": "^4.0.2"
+  }
+}
