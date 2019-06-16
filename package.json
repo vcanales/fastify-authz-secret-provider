@@ -2,6 +2,13 @@
   "name": "fastify-authz-jwks",
   "version": "1.0.6",
   "description": "Secret provider for Auth0 on Fastify",
+  "keywords": [
+    "fastify",
+    "auth0",
+    "jwks-rsa",
+    "secret",
+    "provider"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "build": "babel ./src --out-dir ./dist --source-maps",
