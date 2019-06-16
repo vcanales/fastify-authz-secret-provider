@@ -36,3 +36,5 @@ export default function fastifyJwtSecret(options) {
     });
   };
 }
+
+module.exports = fastifyJwtSecret;
