@@ -8,7 +8,7 @@ const handleSigningKeyError = (err, cb) => {
   return cb(err);
 };
 
-export const fastifyJwtSecret = options => {
+export default function fastifyJwtSecret(options) {
   if (options === null || options === undefined) {
     throw new ArgumentError(
       'An options object must be provided when initializing fastifyJwtSecret',
@@ -35,4 +35,4 @@ export const fastifyJwtSecret = options => {
       return cb(null, key.publicKey || key.rsaPublicKey);
     });
   };
-};
+}

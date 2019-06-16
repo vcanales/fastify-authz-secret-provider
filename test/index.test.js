@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { ArgumentError } from 'jwks-rsa';
 import Fastify from 'fastify';
 import fastifyJwt from 'fastify-jwt';
-import { fastifyJwtSecret } from '../';
+import fastifyJwtSecret from '../src';
 
 describe('fastifyJwtSecret', () => {
   it('should throw error if options.jwksUri is null', () => {
