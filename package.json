@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "babel ./src --out-dir ./dist --source-maps",
-    "prePublishOnly": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "NODE_ENV=test mocha --require @babel/register --exit --timeout 5000"
   },
   "author": "Vicente Canales <vicente@canales.io>",
