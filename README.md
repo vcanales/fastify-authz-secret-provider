@@ -7,13 +7,13 @@ Auth0 secret provider integration through `jwks-rsa` in Fastify.
 # Install
 
 ```terminal
-$ npm install -S fastify-authz-secret-provider
+$ npm install -S fastify-authz-jwks
 ```
 
 # Usage:
 
 ```js
-const fastifySecretProvider = require('fastify-authz-secret-provider');
+const fastifySecretProvider = require('fastify-authz-jwks');
 const fastifyJwt = require('fastify-jwt');
 
 fastify.register(fastifyJwt, {

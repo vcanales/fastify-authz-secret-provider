@@ -1,5 +1,5 @@
 {
-  "name": "fastify-authz-secret-provider",
+  "name": "fastify-authz-jwks",
   "version": "1.0.6",
   "description": "Secret provider for Auth0 on Fastify",
   "main": "dist/index.js",
