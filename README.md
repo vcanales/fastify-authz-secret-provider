@@ -32,4 +32,4 @@ fastify.register(fastifyJwt, {
 
 # Motivation
 
-A [PR created on Auth0's GitHub](https://github.com/vcanales/fastify-authz-secret-provider) has gone completely stale waiting for review on this integration, which I've already used in a few projects, so I'm creating this to maintain it from one location.
+A [PR created on Auth0's GitHub](https://github.com/auth0/node-jwks-rsa/pull/31) has gone completely stale waiting for review on this integration, which I've already used in a few projects, so I'm creating this to maintain it from one location.
