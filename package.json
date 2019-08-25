@@ -20,6 +20,10 @@
   "dependencies": {
     "jwks-rsa": "^1.6.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vcanales/fastify-authz-secret-provider"
+  },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
