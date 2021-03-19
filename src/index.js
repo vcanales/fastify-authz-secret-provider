@@ -15,9 +15,10 @@ export default function fastifyJwtSecret(options) {
     );
   }
 
-  const client = new JwksClient(options);
+  const client = JwksClient(options);
   const onError = options.handleSigningKeyError || handleSigningKeyError;
-  return function secretProvider(request, decoded, cb) {
+
+  return (request, decoded, cb) => {
     // if decoded is null, token is not present or is invalid
     if (!decoded) {
       return cb(new Error('Invalid token'), null);
@@ -32,7 +33,7 @@ export default function fastifyJwtSecret(options) {
         return onError(err, newError => cb(newError, null));
       }
       // Provide the key.
-      return cb(null, key.publicKey || key.rsaPublicKey);
+      return cb(null, key.getPublicKey);
     });
   };
 }
