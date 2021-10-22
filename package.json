@@ -25,7 +25,7 @@
     "url": "https://github.com/vcanales/fastify-authz-secret-provider"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.1",
+    "@babel/cli": "^7.15.7",
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -35,7 +35,7 @@
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^5.1.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "fastify": "^3.14.0",
+    "fastify": "^3.22.1",
     "fastify-jwt": "^2.4.0",
     "mocha": "^6.2.3",
     "prettier": "^1.18.2",
