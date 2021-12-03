@@ -33,7 +33,7 @@ export default function fastifyJwtSecret(options) {
         return onError(err, newError => cb(newError, null));
       }
       // Provide the key.
-      return cb(null, key.getPublicKey);
+      return cb(null, key.getPublicKey());
     });
   };
 }
